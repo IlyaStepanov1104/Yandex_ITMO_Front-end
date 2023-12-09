@@ -28,7 +28,7 @@
     }
 
     .skill {
-        padding: 1.1vw 0;
+        padding: 1.4vw;
     }
 
     .add {
@@ -94,9 +94,15 @@
     }
 
     .skill_form input {
+        box-sizing: border-box;
         width: 100%;
     }
-
+    .skill .skill_title svg {
+        opacity: 1;
+    }
+    .skill:hover {
+         background-color: transparent;
+     }
     .skill_form button[type="submit"] {
         width: 100%;
     }

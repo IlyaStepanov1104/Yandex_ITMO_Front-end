@@ -79,7 +79,7 @@ section {
 }
 
 #screen5 .grid_2_areas {
-    gap: 16px;
+    gap: 0;
 }
 
 footer {
@@ -217,7 +217,7 @@ a.button--active {
 }
 
 .skill {
-    padding: 8px;
+    padding: 16px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;

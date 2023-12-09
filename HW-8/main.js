@@ -46,6 +46,7 @@ skillsBlock.addEventListener('click', (event) => {
 let skillForm = document.querySelector('.js-skill-add');
 
 skillForm.addEventListener('submit', (event) => {
+    event.preventDefault();
     const name = skillForm.querySelector('#skill_name');
     const percentage = skillForm.querySelector('#skill_percentage');
     if (isNaN(percentage.value)) {
@@ -84,12 +85,6 @@ skillForm.addEventListener('submit', (event) => {
     // Append path element to SVG element
     svgElement.appendChild(pathElement);
 
-    // Add listener for click
-    svgElement.addEventListener('click', () => {
-        let skill = svgElement.parentNode.parentNode;
-        skill.remove();
-    });
-
     // Append SVG element to skill title
     skillTitle.appendChild(svgElement);
 
@@ -111,7 +106,6 @@ skillForm.addEventListener('submit', (event) => {
     skillsBlock.appendChild(skillContainer);
     name.value = '';
     percentage.value = '';
-    return false;
 });
 
 
